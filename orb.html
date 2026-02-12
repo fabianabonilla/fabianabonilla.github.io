@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORB in SPY | Fabian Bonilla</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="quant.html">Quant Lab</a>
+  <a href="modeling.html">Modeling</a>
+  <a href="entrepreneurship.html">Entrepreneurship</a>
+</nav>
+
+<h1>Opening Range Breakout in SPY</h1>
+<div class="subtitle">A research-style evaluation of a popular intraday strategy.</div>
+
+<hr>
+
+<div class="section">
+  <h2>Research Question</h2>
+  <p>
+    Many traders claim the opening range breakout (ORB) is a repeatable edge.
+    This project tests whether an ORB strategy in SPY produces excess
+    risk-adjusted returns after accounting for volatility and transaction costs.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Method</h2>
+  <ul>
+    <li><b>Universe:</b> SPY</li>
+    <li><b>Signal:</b> Break above/below the first 15 minutes of the session</li>
+    <li><b>Risk metrics:</b> Sharpe, max drawdown, win rate, average trade return</li>
+    <li><b>Robustness:</b> Performance across volatility regimes + simple sensitivity checks</li>
+    <li><b>Costs:</b> Transaction cost assumptions included in evaluation</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Planned Outputs</h2>
+  <ul>
+    <li>Equity curve and drawdown curve</li>
+    <li>Return distribution (histogram)</li>
+    <li>Performance table (before vs after costs)</li>
+    <li>Regime comparison (low vs high volatility periods)</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Status</h2>
+  <p>
+    <b>Current:</b> Building dataset + backtest framework in R.
+    <br>
+    <b>Next:</b> Generate visuals and write an executive summary.
+  </p>
+</div>
+
+<footer>© 2026 Fabian Bonilla · fabianb.com</footer>
+
+</body>
+</html>
