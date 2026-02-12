@@ -70,3 +70,13 @@ footer {
   font-size: 14px;
   color: #666;
 }
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover .card {
+  border-color: #bdbdbd;
+}
