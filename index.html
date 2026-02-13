@@ -1,110 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fabian Bonilla</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="research.html">Research</a>
+        <a href="quant.html">Quant Lab</a>
+        <a href="modeling.html">Modeling</a>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="downloads.html">Downloadables</a>
+      </nav>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="quant.html">Quant Lab</a>
-  <a href="modeling.html">Modeling</a>
-  <a href="entrepreneurship.html">Entrepreneurship</a>
-  <a href="downloads.html">Downloadables</a>
-</nav>
+      <h1>Fabian Bonilla</h1>
+      <p class="subtitle">Quantitative Economics • Financial Markets • Entrepreneurial Builder</p>
+    </header>
 
+    <main>
+      <section class="section prose">
+        <p>
+          I study financial markets through empirical research and systematic modeling.
+          My work combines econometrics, trading system development, and financial decision analysis
+          to evaluate risk, return, and strategic opportunity.
+        </p>
+        <p>
+          This website documents my ongoing projects, research questions, quantitative models,
+          and long-term intellectual development.
+        </p>
 
-<h1>Fabian Bonilla</h1>
-<div class="subtitle">
-  Quantitative Economics • Financial Markets • Entrepreneurial Builder
-</div>
+        <a class="kicker-link" href="downloads.html">View Resume & Downloadables →</a>
+      </section>
 
-<div class="section">
-  <p>
-    I study financial markets through empirical research and systematic modeling.
-    My work combines econometrics, trading system development, and financial
-    decision analysis to evaluate risk, return, and strategic opportunity.
-  </p>
+      <hr />
 
-  <p>
-    This website documents my ongoing projects, research questions,
-    quantitative models, and long-term intellectual development.
-  </p>
-</div>
-<p>
-  <a href="downloads.html" style="text-decoration:none; font-weight:600;">View Resume & Downloadables →</a>
-</p>
+      <section class="section">
+        <h2>Featured Work</h2>
 
-  
-<hr>
-<hr>
+        <a class="card-link" href="orb.html">
+          <article class="card">
+            <div>
+              <span class="tag">Research</span>
+              <span class="tag">Trading Systems</span>
+            </div>
+            <h3 class="card-title">Opening Range Breakout in SPY</h3>
+            <p>
+              Testing whether a popular intraday strategy produces robust risk-adjusted returns after costs and across regimes.
+              <br /><i>Status:</i> Drafting.
+            </p>
+          </article>
+        </a>
 
-<hr>
+        <a class="card-link" href="research.html">
+          <article class="card">
+            <div>
+              <span class="tag">Causal Inference</span>
+              <span class="tag">Policy</span>
+            </div>
+            <h3 class="card-title">Minimum Wage & Employment (Difference-in-Differences)</h3>
+            <p>
+              A DID-style evaluation framework with identification assumptions, robustness checks, and interpretation.
+              <br /><i>Status:</i> Planned.
+            </p>
+          </article>
+        </a>
 
-<div class="section">
-  <h2>Featured Work</h2>
+        <a class="card-link" href="modeling.html">
+          <article class="card">
+            <div>
+              <span class="tag">Rates</span>
+              <span class="tag">Risk</span>
+            </div>
+            <h3 class="card-title">Duration & Interest Rate Risk Model</h3>
+            <p>
+              Duration-matching and rate sensitivity modeling for fixed income portfolios and financial institutions.
+              <br /><i>Status:</i> Planned.
+            </p>
+          </article>
+        </a>
+      </section>
 
-  <a class="card-link" href="orb.html">
-    <div class="card">
-      <div>
-        <span class="tag">Research</span>
-        <span class="tag">Trading Systems</span>
-      </div>
-      <h2 style="margin:10px 0 6px;">Opening Range Breakout in SPY</h2>
-      <p style="margin:0;">
-        Testing whether a popular intraday strategy produces robust risk-adjusted returns after costs and across regimes.
-        <br><i>Status:</i> Drafting.
-      </p>
-    </div>
-  </a>
+      <section class="section prose">
+        <h2>Current Focus</h2>
+        <ul>
+          <li>Systematic trading strategy backtesting</li>
+          <li>Volatility regime analysis</li>
+          <li>Factor-based equity modeling</li>
+          <li>Duration and interest rate risk management</li>
+        </ul>
+      </section>
+    </main>
 
-  <a class="card-link" href="research.html">
-    <div class="card">
-      <div>
-        <span class="tag">Causal Inference</span>
-        <span class="tag">Policy</span>
-      </div>
-      <h2 style="margin:10px 0 6px;">Minimum Wage & Employment (Difference-in-Differences)</h2>
-      <p style="margin:0;">
-        A DID-style evaluation framework with identification assumptions, robustness checks, and interpretation.
-        <br><i>Status:</i> Planned.
-      </p>
-    </div>
-  </a>
-
-  <a class="card-link" href="modeling.html">
-    <div class="card">
-      <div>
-        <span class="tag">Rates</span>
-        <span class="tag">Risk</span>
-      </div>
-      <h2 style="margin:10px 0 6px;">Duration & Interest Rate Risk Model</h2>
-      <p style="margin:0;">
-        Duration-matching and rate sensitivity modeling for fixed income portfolios and financial institutions.
-        <br><i>Status:</i> Planned.
-      </p>
-    </div>
-  </a>
-
-</div>
-
-<div class="section">
-  <h2>Current Focus</h2>
-  <ul>
-    <li>Systematic trading strategy backtesting</li>
-    <li>Volatility regime analysis</li>
-    <li>Factor-based equity modeling</li>
-    <li>Duration and interest rate risk management</li>
-  </ul>
-</div>
-
-<footer>
-  © 2026 Fabian Bonilla · fabianb.com
-</footer>
-
+    <footer>© 2026 Fabian Bonilla · fabianb.com</footer>
+  </div>
 </body>
 </html>
