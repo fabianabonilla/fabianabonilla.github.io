@@ -8,9 +8,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <div class="container">
-    <header>
-      <nav>
+    <header class="site-header">
+      <nav class="nav">
         <a href="index.html" aria-current="page">Home</a>
         <a href="research.html">Research</a>
         <a href="quant.html">Quant Lab</a>
@@ -18,71 +20,109 @@
         <a href="entrepreneurship.html">Entrepreneurship</a>
         <a href="downloads.html">Downloadables</a>
       </nav>
-
-      <h1>Fabian Bonilla</h1>
-      <p class="subtitle">Quantitative Economics • Financial Markets • Entrepreneurial Builder</p>
     </header>
 
-    <main>
-      <section class="section prose">
-        <p>
-          I study financial markets through empirical research and systematic modeling.
-          My work combines econometrics, trading system development, and financial decision analysis
-          to evaluate risk, return, and strategic opportunity.
-        </p>
-        <p>
-          This website documents my ongoing projects, research questions, quantitative models,
-          and long-term intellectual development.
-        </p>
-        <a class="kicker-link" href="downloads.html">View Resume & Downloadables →</a>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-left">
+          <h1 class="title">Fabian Bonilla</h1>
+          <p class="subtitle">Quantitative Economics • Financial Markets • Entrepreneurial Builder</p>
+
+          <div class="prose">
+            <p>
+              I study financial markets through empirical research and systematic modeling.
+              My work combines econometrics, trading system development, and financial decision analysis
+              to evaluate risk, return, and strategic opportunity.
+            </p>
+            <p>
+              This website documents my ongoing projects, research questions, quantitative models,
+              and long-term intellectual development.
+            </p>
+
+            <div class="hero-links">
+              <a class="kicker-link" href="downloads.html">View Resume & Downloadables →</a>
+              <a class="kicker-link subtle" href="quant.html">Go to Quant Lab →</a>
+            </div>
+
+            <div class="pill-row" aria-label="Focus areas">
+              <span class="pill">Econometrics</span>
+              <span class="pill">Systematic Strategies</span>
+              <span class="pill">Risk Modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <h2 class="panel-title">Where you can start</h2>
+          <ul class="panel-list">
+            <li><a href="orb.html">Read: Opening Range Breakout (SPY)</a></li>
+            <li><a href="research.html">Browse: Research topics</a></li>
+            <li><a href="modeling.html">Explore: Modeling work</a></li>
+            <li><a href="downloads.html">Resume + PDFs</a></li>
+          </ul>
+        </aside>
       </section>
 
-      <hr />
+      <hr class="rule" />
 
       <section class="section">
-        <h2>Featured Work</h2>
+        <div class="section-head">
+          <h2>Featured Work</h2>
+          <p class="section-note">Selected projects with ongoing write-ups and replication-ready notes.</p>
+        </div>
 
-        <a class="card-link" href="orb.html">
-          <article class="card">
-            <div>
-              <span class="tag">RESEARCH</span>
-              <span class="tag">SYSTEMS</span>
-            </div>
-            <h3 class="card-title">Opening Range Breakout in SPY</h3>
-            <p>
-              Testing whether a popular intraday strategy produces robust risk-adjusted returns after costs and across regimes.
-              <br /><i>Status:</i> Drafting.
-            </p>
-          </article>
-        </a>
+        <div class="work-list">
+          <a class="card-link" href="orb.html">
+            <article class="card">
+              <div class="card-top">
+                <div class="tags">
+                  <span class="tag">RESEARCH</span>
+                  <span class="tag">SYSTEMS</span>
+                </div>
+                <span class="status">Drafting</span>
+              </div>
+              <h3 class="card-title">Opening Range Breakout in SPY</h3>
+              <p class="card-desc">
+                Testing whether a popular intraday strategy produces robust risk-adjusted returns after costs and across regimes.
+              </p>
+              <div class="card-cta">Read case study →</div>
+            </article>
+          </a>
 
-        <a class="card-link" href="research.html">
-          <article class="card">
-            <div>
-              <span class="tag">CAUSAL</span>
-              <span class="tag">POLICY</span>
-            </div>
-            <h3 class="card-title">Minimum Wage & Employment (Difference-in-Differences)</h3>
-            <p>
-              A DID-style evaluation framework with identification assumptions, robustness checks, and interpretation.
-              <br /><i>Status:</i> Planned.
-            </p>
-          </article>
-        </a>
+          <a class="card-link" href="research.html">
+            <article class="card">
+              <div class="card-top">
+                <div class="tags">
+                  <span class="tag">CAUSAL</span>
+                  <span class="tag">POLICY</span>
+                </div>
+                <span class="status">Planned</span>
+              </div>
+              <h3 class="card-title">Minimum Wage & Employment (Difference-in-Differences)</h3>
+              <p class="card-desc">
+                A DID-style evaluation framework with identification assumptions, robustness checks, and interpretation.
+              </p>
+              <div class="card-cta">View outline →</div>
+            </article>
+          </a>
 
-        <a class="card-link" href="modeling.html">
-          <article class="card">
-            <div>
-              <span class="tag">RATES</span>
-              <span class="tag">RISK</span>
-            </div>
-            <h3 class="card-title">Duration & Interest Rate Risk Model</h3>
-            <p>
-              Duration-matching and rate sensitivity modeling for fixed income portfolios and financial institutions.
-              <br /><i>Status:</i> Planned.
-            </p>
-          </article>
-        </a>
+          <a class="card-link" href="modeling.html">
+            <article class="card">
+              <div class="card-top">
+                <div class="tags">
+                  <span class="tag">RATES</span>
+                  <span class="tag">RISK</span>
+                </div>
+                <span class="status">Planned</span>
+              </div>
+              <h3 class="card-title">Duration & Interest Rate Risk Model</h3>
+              <p class="card-desc">
+                Duration-matching and rate sensitivity modeling for fixed income portfolios and financial institutions.
+              </p>
+              <div class="card-cta">See model plan →</div>
+            </article>
+          </a>
+        </div>
       </section>
 
       <section class="section prose">
@@ -96,7 +136,7 @@
       </section>
     </main>
 
-    <footer>© 2026 Fabian Bonilla · fabianb.com</footer>
+    <footer class="footer">© 2026 Fabian Bonilla · fabianb.com</footer>
   </div>
 </body>
 </html>
