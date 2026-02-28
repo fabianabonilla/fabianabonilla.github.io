@@ -93,7 +93,9 @@ a:hover{ color:var(--accent); }
 .site-header{ margin-bottom:30px; }
 
 /* Nav */
-.nav{
+/* Primary navigation (supports both classed and plain header nav markup) */
+.nav,
+.container > header > nav{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
@@ -106,7 +108,8 @@ a:hover{ color:var(--accent); }
   backdrop-filter: blur(8px);
 }
 
-.nav a{
+.nav a,
+.container > header > nav a{
   text-decoration:none;
   color:var(--muted);
   padding:8px 12px;
@@ -115,14 +118,16 @@ a:hover{ color:var(--accent); }
   transition: all .2s ease;
 }
 
-.nav a[aria-current="page"]{
+.nav a[aria-current="page"],
+.container > header > nav a[aria-current="page"]{
   color:var(--text);
   background:var(--surface-solid);
   border-color:var(--line);
   box-shadow: 0 6px 16px rgba(38, 30, 19, 0.08);
 }
 
-.nav a:hover{
+.nav a:hover,
+.container > header > nav a:hover{
   background: rgba(255,255,255,.85);
   color:var(--accent);
   border-color:var(--line);
@@ -338,7 +343,9 @@ footer{
 @media (max-width: 600px){
   .container{ padding:20px 14px 54px; }
   .card-title{ font-size:24px; }
-  .nav{ border-radius:20px; }
+  /* Primary navigation (supports both classed and plain header nav markup) */
+.nav,
+.container > header > nav{ border-radius:20px; }
 }
 
 /* Reduced motion */
