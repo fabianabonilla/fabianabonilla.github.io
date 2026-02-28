@@ -57,6 +57,9 @@
             </div>
             <span class="status">Planned</span>
           </div>
+          <h3 class="card-title">Monte Carlo Portfolio Simulator</h3>
+          <p class="card-desc">
+            Simulates thousands of portfolio paths to estimate drawdown probability, terminal wealth ranges, and risk-of-ruin under different allocation rules.
           <h3 class="card-title">EMA Strategy Across Volatility Regimes</h3>
           <p class="card-desc">
             Tests whether simple momentum indicators behave differently across low-volatility and high-volatility environments.
@@ -64,6 +67,11 @@
           <details class="detail-card">
             <summary>Planned build guidelines</summary>
             <ul>
+              <li>Define baseline return/volatility assumptions and correlation structure first.</li>
+              <li>Run multiple horizon scenarios with fixed contribution and rebalance schedules.</li>
+              <li>Track percentile outcomes, max drawdown distributions, and expected recovery time.</li>
+              <li>Stress assumptions under adverse volatility/sequence-of-returns shocks.</li>
+              <li>Summarize allocation guardrails and risk limits for practical decisions.</li>
               <li>Define volatility regime segmentation first.</li>
               <li>Fix identical entry/exit rules across regimes.</li>
               <li>Compare returns, drawdowns, and trade frequency by regime.</li>
