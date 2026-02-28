@@ -12,6 +12,7 @@
     <header>
       <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="research.html">Research</a>
         <a href="quant.html" aria-current="page">Quant Lab</a>
         <a href="modeling.html">Modeling</a>
@@ -21,34 +22,55 @@
 
       <h1>Quant Lab</h1>
       <p class="subtitle">Backtests, risk, and systematic strategy research.</p>
+      <div class="pill-row" aria-label="Coding languages">
+        <span class="pill">Primary: R</span>
+        <span class="pill">Secondary: Python</span>
+      </div>
     </header>
 
     <main>
       <section class="section">
         <a class="card-link" href="orb.html">
           <article class="card">
-            <div>
-              <span class="tag">BACKTEST</span>
-              <span class="tag">RISK</span>
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Backtest</span>
+                <span class="tag">Risk</span>
+                <span class="tag">Language: R</span>
+              </div>
+              <span class="status">Building</span>
             </div>
-            <h3 class="card-title">ORB Backtest Framework (R)</h3>
-            <p>
-              A reusable backtesting template with transaction costs, position sizing, and performance diagnostics.
-              <br /><i>Status:</i> Building.
+            <h3 class="card-title">ORB Backtest Framework</h3>
+            <p class="card-desc">
+              Reusable backtesting template with transaction costs, position sizing, and performance diagnostics.
             </p>
+            <div class="card-cta">Open detailed ORB page →</div>
           </article>
         </a>
 
         <article class="card">
-          <div>
-            <span class="tag">INDICATORS</span>
-            <span class="tag">REGIMES</span>
+          <div class="card-top">
+            <div class="tags">
+              <span class="tag">Indicators</span>
+              <span class="tag">Regimes</span>
+              <span class="tag">Language: Python/R</span>
+            </div>
+            <span class="status">Planned</span>
           </div>
-          <h3 class="card-title">EMA Strategy Across Volatility Regimes</h3>
-          <p>
-            Tests whether simple momentum indicators behave differently across volatility environments.
-            <br /><i>Status:</i> Planned.
+          <h3 class="card-title">Monte Carlo Portfolio Simulator</h3>
+          <p class="card-desc">
+            Simulates thousands of portfolio paths to estimate drawdown probability, terminal wealth ranges, and risk-of-ruin under different allocation rules.
           </p>
+          <details class="detail-card">
+            <summary>Planned build guidelines</summary>
+            <ul>
+              <li>Define baseline return/volatility assumptions and correlation structure first.</li>
+              <li>Run multiple horizon scenarios with fixed contribution and rebalance schedules.</li>
+              <li>Track percentile outcomes, max drawdown distributions, and expected recovery time.</li>
+              <li>Stress assumptions under adverse volatility/sequence-of-returns shocks.</li>
+              <li>Summarize allocation guardrails and risk limits for practical decisions.</li>
+            </ul>
+          </details>
         </article>
       </section>
     </main>
