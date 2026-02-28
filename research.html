@@ -12,6 +12,7 @@
     <header>
       <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="research.html" aria-current="page">Research</a>
         <a href="quant.html">Quant Lab</a>
         <a href="modeling.html">Modeling</a>
@@ -27,28 +28,46 @@
       <section class="section">
         <a class="card-link" href="orb.html">
           <article class="card">
-            <div>
-              <span class="tag">ECONOMETRICS</span>
-              <span class="tag">MARKETS</span>
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Econometrics</span>
+                <span class="tag">Markets</span>
+                <span class="tag">Language: R</span>
+              </div>
+              <span class="status">Drafting</span>
             </div>
             <h3 class="card-title">Opening Range Breakout: Does it work in SPY?</h3>
-            <p>
-              A research-style evaluation of a popular intraday strategy using historical data, risk metrics, and robustness checks.
-              <br /><i>Status:</i> Drafting.
+            <p class="card-desc">
+              A research-style evaluation using historical data, risk metrics, and robustness checks.
+              Includes implementation notes, progress updates, and next execution milestones.
             </p>
+            <div class="card-cta">Read expanded project →</div>
           </article>
         </a>
 
         <article class="card">
-          <div>
-            <span class="tag">CAUSAL</span>
-            <span class="tag">POLICY</span>
+          <div class="card-top">
+            <div class="tags">
+              <span class="tag">Causal</span>
+              <span class="tag">Policy</span>
+              <span class="tag">Language: R</span>
+            </div>
+            <span class="status">Planned</span>
           </div>
           <h3 class="card-title">Minimum Wage & Employment (DID)</h3>
-          <p>
-            Difference-in-differences framework, assumptions, and interpretation—built like a professional memo.
-            <br /><i>Status:</i> Planned.
+          <p class="card-desc">
+            Difference-in-differences framework, assumptions, and interpretation built in professional memo format.
           </p>
+          <details class="detail-card">
+            <summary>Planned build guidelines</summary>
+            <ul>
+              <li>Define treatment/control groups and policy timing cleanly.</li>
+              <li>Document identification assumptions and pre-trend tests.</li>
+              <li>Report baseline estimate + robustness alternatives.</li>
+              <li>Separate statistical significance from economic significance.</li>
+              <li>Summarize in decision-ready language for non-technical readers.</li>
+            </ul>
+          </details>
         </article>
       </section>
     </main>

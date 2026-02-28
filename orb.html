@@ -12,6 +12,7 @@
     <header>
       <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="research.html" aria-current="page">Research</a>
         <a href="quant.html">Quant Lab</a>
         <a href="modeling.html">Modeling</a>
@@ -21,7 +22,7 @@
 
       <h1>Opening Range Breakout in SPY</h1>
       <p class="subtitle">A research-style evaluation of a popular intraday strategy.</p>
-      <p class="meta">Last updated: Feb 13, 2026 · Methods + backtest framework in progress</p>
+      <p class="meta">Status: In progress · Stack: R · Last updated: Feb 2026</p>
     </header>
 
     <main>
@@ -35,12 +36,22 @@
       </section>
 
       <section class="section prose">
+        <h2>What I Have Built So Far</h2>
+        <ul>
+          <li><b>Dataset foundation:</b> Started a structured historical SPY dataset for intraday ORB evaluation.</li>
+          <li><b>Backtest framework in R:</b> Building reusable logic for entries, exits, and trade-by-trade tracking.</li>
+          <li><b>Performance metrics setup:</b> Framing outputs for Sharpe, drawdown, win rate, and average trade return.</li>
+          <li><b>Evaluation approach:</b> Cost-aware analysis and robustness checks by volatility regime.</li>
+        </ul>
+      </section>
+
+      <section class="section prose">
         <h2>Method</h2>
         <ul>
           <li><b>Universe:</b> SPY</li>
           <li><b>Signal:</b> Break above/below the first 15 minutes of the session</li>
           <li><b>Risk metrics:</b> Sharpe, max drawdown, win rate, average trade return</li>
-          <li><b>Robustness:</b> Performance across volatility regimes + simple sensitivity checks</li>
+          <li><b>Robustness:</b> Performance across volatility regimes + sensitivity checks</li>
           <li><b>Costs:</b> Transaction cost assumptions included in evaluation</li>
         </ul>
       </section>
@@ -52,16 +63,24 @@
           <li>Return distribution (histogram)</li>
           <li>Performance table (before vs after costs)</li>
           <li>Regime comparison (low vs high volatility periods)</li>
+          <li>Short executive summary with key conclusions and caveats</li>
         </ul>
       </section>
 
       <section class="section prose">
-        <h2>Status</h2>
-        <p>
-          <b>Current:</b> Building dataset + backtest framework in R.
-          <br />
-          <b>Next:</b> Generate visuals and write an executive summary.
-        </p>
+        <h2>Next Steps</h2>
+        <details class="detail-card" open>
+          <summary>Finalize dataset integrity checks</summary>
+          <p>Validate timestamps, missing bars, and assumptions around session boundaries before final run outputs.</p>
+        </details>
+        <details class="detail-card">
+          <summary>Run full backtest + diagnostics</summary>
+          <p>Generate benchmark comparisons, turnover statistics, and stability analysis over subperiods.</p>
+        </details>
+        <details class="detail-card">
+          <summary>Publish report-quality visuals</summary>
+          <p>Create clean charts and a concise narrative for replication-ready communication.</p>
+        </details>
       </section>
 
       <section class="section">
