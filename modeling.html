@@ -12,6 +12,7 @@
     <header>
       <nav>
         <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="research.html">Research</a>
         <a href="quant.html">Quant Lab</a>
         <a href="modeling.html" aria-current="page">Modeling</a>
@@ -26,27 +27,51 @@
     <main>
       <section class="section">
         <article class="card">
-          <div>
-            <span class="tag">RATES</span>
-            <span class="tag">RISK</span>
+          <div class="card-top">
+            <div class="tags">
+              <span class="tag">Rates</span>
+              <span class="tag">Risk</span>
+              <span class="tag">Language: Excel</span>
+            </div>
+            <span class="status">Planned</span>
           </div>
           <h3 class="card-title">Duration & Interest Rate Risk Model</h3>
-          <p>
-            Demonstrates duration-matching and rate sensitivity for fixed-income portfolios and financial institutions.
-            <br /><i>Status:</i> Planned.
+          <p class="card-desc">
+            Demonstrates duration matching and rate sensitivity for fixed-income portfolios and financial institutions.
           </p>
+          <details class="detail-card">
+            <summary>Planned build guidelines</summary>
+            <ul>
+              <li>Create base-case duration profile and key rate durations.</li>
+              <li>Model parallel and non-parallel rate shocks.</li>
+              <li>Stress liability-side impacts for institutional balance sheets.</li>
+              <li>Build a dashboard with exposure summaries and hedge suggestions.</li>
+            </ul>
+          </details>
         </article>
 
         <article class="card">
-          <div>
-            <span class="tag">VALUATION</span>
-            <span class="tag">EXCEL</span>
+          <div class="card-top">
+            <div class="tags">
+              <span class="tag">Valuation</span>
+              <span class="tag">Corporate Finance</span>
+              <span class="tag">Language: Excel</span>
+            </div>
+            <span class="status">Planned</span>
           </div>
           <h3 class="card-title">DCF Valuation Template</h3>
-          <p>
-            Revenue drivers, margins, WACC assumptions, and sensitivity analysis in a clean template.
-            <br /><i>Status:</i> Planned.
+          <p class="card-desc">
+            Revenue drivers, margins, WACC assumptions, and sensitivity analysis in a clean repeatable template.
           </p>
+          <details class="detail-card">
+            <summary>Planned build guidelines</summary>
+            <ul>
+              <li>Separate inputs, drivers, and outputs clearly.</li>
+              <li>Provide bull/base/bear scenario assumptions.</li>
+              <li>Add sensitivity tables for WACC and terminal growth.</li>
+              <li>Summarize implied valuation range and key risk drivers.</li>
+            </ul>
+          </details>
         </article>
       </section>
     </main>
@@ -55,4 +80,3 @@
   </div>
 </body>
 </html>
-
