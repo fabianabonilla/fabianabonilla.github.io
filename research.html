@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Fabian Bonilla</title>
   <meta name="description" content="Empirical questions, econometrics, and clear write-ups." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,60 +22,66 @@
         <a href="entrepreneurship.html">Entrepreneurship</a>
         <a href="downloads.html">Downloadables</a>
       </nav>
-
-      <h1>Research</h1>
-      <p class="subtitle">Empirical questions, econometrics, and clear write-ups.</p>
     </header>
 
     <main>
+      <h1 class="page-title">Research</h1>
+      <p class="subtitle">Empirical questions, econometrics, and clear write-ups.</p>
+
       <section class="section">
-        <a class="card-link" href="orb.html">
+        <div class="section-head">
+          <h2>Active &amp; Planned Studies</h2>
+        </div>
+
+        <div class="work-list">
+          <a class="card-link" href="orb.html">
+            <article class="card">
+              <div class="card-top">
+                <div class="tags">
+                  <span class="tag">Econometrics</span>
+                  <span class="tag">Markets</span>
+                  <span class="tag">R</span>
+                </div>
+                <span class="status status-amber">Drafting</span>
+              </div>
+              <h3 class="card-title">Opening Range Breakout: Does it work in SPY?</h3>
+              <p class="card-desc">
+                A research-style evaluation using historical data, risk metrics, and robustness checks.
+                Includes implementation notes, progress updates, and next execution milestones.
+              </p>
+              <div class="card-cta">Read expanded project →</div>
+            </article>
+          </a>
+
           <article class="card">
             <div class="card-top">
               <div class="tags">
-                <span class="tag">Econometrics</span>
-                <span class="tag">Markets</span>
-                <span class="tag">Language: R</span>
+                <span class="tag">Causal</span>
+                <span class="tag">Policy</span>
+                <span class="tag">R</span>
               </div>
-              <span class="status">Drafting</span>
+              <span class="status">Planned</span>
             </div>
-            <h3 class="card-title">Opening Range Breakout: Does it work in SPY?</h3>
+            <h3 class="card-title">Minimum Wage &amp; Employment (DID)</h3>
             <p class="card-desc">
-              A research-style evaluation using historical data, risk metrics, and robustness checks.
-              Includes implementation notes, progress updates, and next execution milestones.
+              Difference-in-differences framework, assumptions, and interpretation built in professional memo format.
             </p>
-            <div class="card-cta">Read expanded project →</div>
+            <details class="detail-card">
+              <summary>Planned build guidelines</summary>
+              <ul>
+                <li>Define treatment/control groups and policy timing cleanly.</li>
+                <li>Document identification assumptions and pre-trend tests.</li>
+                <li>Report baseline estimate + robustness alternatives.</li>
+                <li>Separate statistical significance from economic significance.</li>
+                <li>Summarize in decision-ready language for non-technical readers.</li>
+              </ul>
+            </details>
           </article>
-        </a>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="tags">
-              <span class="tag">Causal</span>
-              <span class="tag">Policy</span>
-              <span class="tag">Language: R</span>
-            </div>
-            <span class="status">Planned</span>
-          </div>
-          <h3 class="card-title">Minimum Wage & Employment (DID)</h3>
-          <p class="card-desc">
-            Difference-in-differences framework, assumptions, and interpretation built in professional memo format.
-          </p>
-          <details class="detail-card">
-            <summary>Planned build guidelines</summary>
-            <ul>
-              <li>Define treatment/control groups and policy timing cleanly.</li>
-              <li>Document identification assumptions and pre-trend tests.</li>
-              <li>Report baseline estimate + robustness alternatives.</li>
-              <li>Separate statistical significance from economic significance.</li>
-              <li>Summarize in decision-ready language for non-technical readers.</li>
-            </ul>
-          </details>
-        </article>
+        </div>
       </section>
     </main>
 
-    <footer>© 2026 Fabian Bonilla · fabianb.com</footer>
+    <footer class="footer">© 2026 Fabian Bonilla · fabianb.com</footer>
   </div>
 </body>
 </html>
