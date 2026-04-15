@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quant Lab | Fabian Bonilla</title>
+  <meta name="description" content="Backtests, risk, and systematic strategy research." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="quant.html" aria-current="page">Quant Lab</a>
+        <a href="modeling.html">Modeling</a>
+        <a href="entrepreneurship.html">Entrepreneurship</a>
+        <a href="downloads.html">Downloadables</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title">Quant Lab</h1>
+      <p class="subtitle">Backtests, risk, and systematic strategy research.</p>
+      <div class="pill-row" aria-label="Coding languages">
+        <span class="pill">Primary: R</span>
+        <span class="pill">Secondary: Python</span>
+      </div>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Projects</h2>
+        </div>
+
+        <div class="work-list">
+          <a class="card-link" href="orb.html">
+            <article class="card">
+              <div class="card-top">
+                <div class="tags">
+                  <span class="tag">Backtest</span>
+                  <span class="tag">Risk</span>
+                  <span class="tag">R</span>
+                </div>
+                <span class="status status-active">Building</span>
+              </div>
+              <h3 class="card-title">ORB Backtest Framework</h3>
+              <p class="card-desc">
+                Reusable backtesting template with transaction costs, position sizing, and performance diagnostics.
+              </p>
+              <div class="card-cta">Open detailed ORB page →</div>
+            </article>
+          </a>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Simulation</span>
+                <span class="tag">Portfolio</span>
+                <span class="tag">Python/R</span>
+              </div>
+              <span class="status">Planned</span>
+            </div>
+            <h3 class="card-title">Monte Carlo Portfolio Simulator</h3>
+            <p class="card-desc">
+              Simulates thousands of portfolio paths to estimate drawdown probability, terminal wealth ranges,
+              and risk-of-ruin under different allocation rules.
+            </p>
+            <details class="detail-card">
+              <summary>Planned build guidelines</summary>
+              <ul>
+                <li>Define baseline return/volatility assumptions and correlation structure first.</li>
+                <li>Run multiple horizon scenarios with fixed contribution and rebalance schedules.</li>
+                <li>Track percentile outcomes, max drawdown distributions, and expected recovery time.</li>
+                <li>Stress assumptions under adverse volatility/sequence-of-returns shocks.</li>
+                <li>Summarize allocation guardrails and risk limits for practical decisions.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Indicators</span>
+                <span class="tag">Regimes</span>
+                <span class="tag">Python/R</span>
+              </div>
+              <span class="status">Planned</span>
+            </div>
+            <h3 class="card-title">EMA Strategy Across Volatility Regimes</h3>
+            <p class="card-desc">
+              Tests whether simple momentum indicators behave differently across low-volatility
+              and high-volatility environments.
+            </p>
+            <details class="detail-card">
+              <summary>Planned build guidelines</summary>
+              <ul>
+                <li>Define volatility regime segmentation first.</li>
+                <li>Fix identical entry/exit rules across regimes.</li>
+                <li>Compare returns, drawdowns, and trade frequency by regime.</li>
+                <li>Include cost assumptions and turnover diagnostics.</li>
+                <li>Conclude where the strategy is usable vs unreliable.</li>
+              </ul>
+            </details>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 Fabian Bonilla · fabianb.com</footer>
+  </div>
+</body>
+</html>
