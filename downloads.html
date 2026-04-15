@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Downloadables | Fabian Bonilla</title>
   <meta name="description" content="Resume, write-ups, and model files (as available)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,88 +22,98 @@
         <a href="entrepreneurship.html">Entrepreneurship</a>
         <a href="downloads.html" aria-current="page">Downloadables</a>
       </nav>
-
-      <h1>Downloadables</h1>
-      <p class="subtitle">Resume, write-ups, and model files (as available).</p>
     </header>
 
     <main>
+      <h1 class="page-title">Downloadables</h1>
+      <p class="subtitle">Resume, write-ups, and model files as they become available.</p>
+
       <section class="section">
-        <h2>Resume</h2>
-        <a class="card-link" href="files/Fabian_Bonilla_Resume.pdf" target="_blank" rel="noreferrer">
+        <div class="section-head">
+          <h2>Resume</h2>
+        </div>
+        <div class="work-list">
+          <a class="card-link" href="files/Fabian_Bonilla_Resume.pdf" target="_blank" rel="noreferrer">
+            <article class="card">
+              <div class="card-top">
+                <div class="tags">
+                  <span class="tag">PDF</span>
+                  <span class="tag">Resume</span>
+                </div>
+                <span class="status status-active">Available</span>
+              </div>
+              <h3 class="card-title">Fabian Bonilla Resume</h3>
+              <p class="card-desc">Open the latest PDF version — education, experience, and skills.</p>
+              <div class="card-cta">Open PDF →</div>
+            </article>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Research Write-ups</h2>
+        </div>
+        <div class="work-list">
           <article class="card">
             <div class="card-top">
               <div class="tags">
-                <span class="tag">PDF</span>
-                <span class="tag">Resume</span>
+                <span class="tag">Research</span>
+                <span class="tag">R</span>
               </div>
-              <span class="status">Available</span>
+              <span class="status status-amber">In Progress</span>
             </div>
-            <h3 class="card-title">Fabian Bonilla Resume</h3>
-            <p class="card-desc">Open the latest PDF version.</p>
-            <div class="card-cta">Open PDF →</div>
+            <h3 class="card-title">Opening Range Breakout in SPY</h3>
+            <p class="card-desc">Executive summary + visuals + methodology. Available when research is complete.</p>
           </article>
-        </a>
+
+          <article class="card">
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Causal</span>
+                <span class="tag">R</span>
+              </div>
+              <span class="status">Planned</span>
+            </div>
+            <h3 class="card-title">Minimum Wage &amp; Employment (DID)</h3>
+            <p class="card-desc">Identification strategy + assumptions + robustness checklist.</p>
+          </article>
+        </div>
       </section>
 
       <section class="section">
-        <h2>Research Write-ups</h2>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="tags">
-              <span class="tag">Research</span>
-              <span class="tag">Language: R</span>
+        <div class="section-head">
+          <h2>Models</h2>
+        </div>
+        <div class="work-list">
+          <article class="card">
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Excel</span>
+                <span class="tag">Template</span>
+              </div>
+              <span class="status">Planned</span>
             </div>
-            <span class="status">In progress</span>
-          </div>
-          <h3 class="card-title">Opening Range Breakout in SPY</h3>
-          <p class="card-desc">Executive summary + visuals + methodology.</p>
-        </article>
+            <h3 class="card-title">DCF Valuation Template</h3>
+            <p class="card-desc">Driver-based assumptions and sensitivity analysis.</p>
+          </article>
 
-        <article class="card">
-          <div class="card-top">
-            <div class="tags">
-              <span class="tag">Causal</span>
-              <span class="tag">Language: R</span>
+          <article class="card">
+            <div class="card-top">
+              <div class="tags">
+                <span class="tag">Excel</span>
+                <span class="tag">Rates</span>
+              </div>
+              <span class="status">Planned</span>
             </div>
-            <span class="status">Planned</span>
-          </div>
-          <h3 class="card-title">Minimum Wage & Employment (DID)</h3>
-          <p class="card-desc">Identification strategy + assumptions + robustness checklist.</p>
-        </article>
-      </section>
-
-      <section class="section">
-        <h2>Models</h2>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="tags">
-              <span class="tag">Excel</span>
-              <span class="tag">Template</span>
-            </div>
-            <span class="status">Planned</span>
-          </div>
-          <h3 class="card-title">DCF Valuation Template</h3>
-          <p class="card-desc">Driver-based assumptions and sensitivity analysis.</p>
-        </article>
-
-        <article class="card">
-          <div class="card-top">
-            <div class="tags">
-              <span class="tag">Excel</span>
-              <span class="tag">Rates</span>
-            </div>
-            <span class="status">Planned</span>
-          </div>
-          <h3 class="card-title">Duration & Rate Risk Model</h3>
-          <p class="card-desc">Duration matching + scenario analysis.</p>
-        </article>
+            <h3 class="card-title">Duration &amp; Rate Risk Model</h3>
+            <p class="card-desc">Duration matching + scenario analysis.</p>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer>© 2026 Fabian Bonilla · fabianb.com</footer>
+    <footer class="footer">© 2026 Fabian Bonilla · fabianb.com</footer>
   </div>
 </body>
 </html>
