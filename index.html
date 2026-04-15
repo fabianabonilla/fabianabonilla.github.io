@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fabian Bonilla</title>
   <meta name="description" content="Capital allocation through systems and discipline: quantitative research, systematic strategy development, and business acquisition." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -25,64 +28,63 @@
 
     <main id="main">
       <section class="hero">
-        <div class="hero-left">
-          <h1 class="title">Fabian Bonilla</h1>
-          <p class="subtitle">Quantitative research, systematic strategy development, and business acquisition.</p>
+        <div class="hero-badge">Economics · University of Georgia · Dec 2026</div>
+        <h1 class="title">Fabian Bonilla</h1>
+        <p class="subtitle">Quantitative research, systematic strategy development, and business acquisition.</p>
 
-          <div class="prose">
-            <p>
-              I’m Fabian Bonilla — an economics student and operator building long-horizon decision systems for markets and business.
+        <div class="hero-grid">
+          <div>
+            <p class="hero-prose">
+              I'm an economics student and operator building long-horizon decision systems for markets and business.
               The focus is simple: remove noise, control risk, and compound outcomes.
             </p>
-            <p>
-              This website documents ongoing projects, active experiments, and planned frameworks.
-              Each project includes its stack, methodology, current progress, and next execution steps.
+            <p class="hero-prose">
+              This site documents ongoing projects, active experiments, and planned frameworks —
+              each with its stack, methodology, current progress, and next execution steps.
             </p>
 
             <div class="hero-links">
-              <a class="kicker-link" href="about.html">Read About Me →</a>
-              <a class="kicker-link" href="downloads.html">View Resume &amp; Downloadables →</a>
-              <a class="kicker-link subtle" href="quant.html">Go to Quant Lab →</a>
+              <a class="btn btn-primary" href="about.html">About Me →</a>
+              <a class="btn" href="downloads.html">Resume &amp; Downloads →</a>
+              <a class="btn" href="quant.html">Quant Lab →</a>
             </div>
 
             <div class="pill-row" aria-label="Focus areas">
               <span class="pill">Econometrics</span>
               <span class="pill">Systematic Trading</span>
               <span class="pill">Risk Management</span>
-              <span class="pill">R / Python / SQL / Excel</span>
+              <span class="pill">R / Python / SQL</span>
             </div>
           </div>
+
+          <aside class="panel">
+            <h2 class="panel-title">Currently Building</h2>
+            <ul class="panel-list">
+              <li>ORB Strategy — robustness &amp; risk refinement</li>
+              <li>Monte Carlo portfolio simulations</li>
+              <li>Business acquisition model (Georgia)</li>
+              <li>GRE prep · target 320</li>
+            </ul>
+
+            <h2 class="panel-title">Where to Start</h2>
+            <ul class="panel-list">
+              <li><a href="orb.html">Opening Range Breakout (SPY)</a></li>
+              <li><a href="about.html">About + Background</a></li>
+              <li><a href="quant.html">Quant projects by language</a></li>
+              <li><a href="downloads.html">Resume + PDFs</a></li>
+            </ul>
+          </aside>
         </div>
-
-        <aside class="panel">
-          <h2 class="panel-title">Currently Building</h2>
-          <ul class="panel-list">
-            <li>ORB Strategy — robustness testing &amp; risk refinement</li>
-            <li>Monte Carlo portfolio simulations</li>
-            <li>Business acquisition modeling (Georgia market)</li>
-            <li>GRE prep (target 320)</li>
-          </ul>
-
-          <h2 class="panel-title" >Where to start</h2>
-          <ul class="panel-list">
-            <li><a href="orb.html">Read: Opening Range Breakout (SPY)</a></li>
-            <li><a href="about.html">About + Background</a></li>
-            <li><a href="quant.html">Quant projects by coding language</a></li>
-            <li><a href="downloads.html">Resume + PDFs</a></li>
-          </ul>
-        </aside>
       </section>
 
       <blockquote class="quote-block">
-        “Return is vanity. Risk-adjusted return is sanity.”
+        "Return is vanity. Risk-adjusted return is sanity."
       </blockquote>
-
-      <hr class="rule" />
 
       <section class="section">
         <div class="section-head">
           <h2>Selected Projects</h2>
-          <p class="section-note">Built and planned work that supports a long-term capital allocator trajectory.</p>
+          <span class="section-note">Active and planned work toward a long-term capital allocator trajectory.</span>
         </div>
 
         <div class="work-list">
@@ -94,7 +96,7 @@
                   <span class="tag">Systems</span>
                   <span class="tag">R</span>
                 </div>
-                <span class="status">In progress</span>
+                <span class="status status-active">In Progress</span>
               </div>
               <h3 class="card-title">Opening Range Breakout Study</h3>
               <p class="card-desc">Backtesting ORB behavior in SPY with transaction costs, regime filters, and risk diagnostics.</p>
@@ -137,26 +139,32 @@
       </section>
 
       <section class="section prose">
-        <h2>What I’m Optimizing For</h2>
+        <div class="section-head">
+          <h2>What I'm Optimizing For</h2>
+        </div>
         <ul>
           <li>High risk-adjusted returns</li>
           <li>Long-term optionality</li>
-          <li>Skill acquisition &gt; income spikes</li>
+          <li>Skill acquisition over income spikes</li>
           <li>Durable systems over lucky trades</li>
           <li>Ownership over employment</li>
         </ul>
+      </section>
 
-        <h2 style="margin-top:18px;">Interactive Project Roadmap</h2>
+      <section class="section">
+        <div class="section-head">
+          <h2>Project Roadmap</h2>
+        </div>
         <details class="detail-card" open>
-          <summary>Now: ORB backtest implementation in R</summary>
+          <summary>Now · ORB backtest implementation in R</summary>
           <p>Build clean OHLC data pipeline, strategy logic, and performance diagnostics before moving to visual reporting.</p>
         </details>
         <details class="detail-card">
-          <summary>Next: causal research and memo formatting</summary>
+          <summary>Next · Causal research and memo formatting</summary>
           <p>Use DID setup, pre-trend checks, and scenario interpretation to produce a rigorous but readable brief.</p>
         </details>
         <details class="detail-card">
-          <summary>Then: financial modeling toolkits</summary>
+          <summary>Then · Financial modeling toolkits</summary>
           <p>Create reusable Excel templates for valuation and duration/rate risk to support investment decisions.</p>
         </details>
       </section>
