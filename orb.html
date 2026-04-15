@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ORB in SPY | Fabian Bonilla</title>
   <meta name="description" content="A research-style evaluation of a popular intraday strategy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -19,15 +22,18 @@
         <a href="entrepreneurship.html">Entrepreneurship</a>
         <a href="downloads.html">Downloadables</a>
       </nav>
-
-      <h1>Opening Range Breakout in SPY</h1>
-      <p class="subtitle">A research-style evaluation of a popular intraday strategy.</p>
-      <p class="meta">Status: In progress · Stack: R · Last updated: Feb 2026</p>
     </header>
 
     <main>
+      <div class="hero-badge">In Progress · Stack: R</div>
+      <h1 class="page-title">Opening Range Breakout in SPY</h1>
+      <p class="subtitle">A research-style evaluation of a popular intraday strategy.</p>
+      <p class="meta">Last updated: Feb 2026</p>
+
       <section class="section prose">
-        <h2>Research Question</h2>
+        <div class="section-head">
+          <h2>Research Question</h2>
+        </div>
         <p>
           Many traders claim the opening range breakout (ORB) is a repeatable edge.
           This project tests whether an ORB strategy in SPY produces excess risk-adjusted returns
@@ -36,28 +42,34 @@
       </section>
 
       <section class="section prose">
-        <h2>What I Have Built So Far</h2>
+        <div class="section-head">
+          <h2>What's Been Built</h2>
+        </div>
         <ul>
-          <li><b>Dataset foundation:</b> Started a structured historical SPY dataset for intraday ORB evaluation.</li>
-          <li><b>Backtest framework in R:</b> Building reusable logic for entries, exits, and trade-by-trade tracking.</li>
-          <li><b>Performance metrics setup:</b> Framing outputs for Sharpe, drawdown, win rate, and average trade return.</li>
-          <li><b>Evaluation approach:</b> Cost-aware analysis and robustness checks by volatility regime.</li>
+          <li><strong>Dataset foundation:</strong> Started a structured historical SPY dataset for intraday ORB evaluation.</li>
+          <li><strong>Backtest framework in R:</strong> Building reusable logic for entries, exits, and trade-by-trade tracking.</li>
+          <li><strong>Performance metrics setup:</strong> Framing outputs for Sharpe, drawdown, win rate, and average trade return.</li>
+          <li><strong>Evaluation approach:</strong> Cost-aware analysis and robustness checks by volatility regime.</li>
         </ul>
       </section>
 
       <section class="section prose">
-        <h2>Method</h2>
+        <div class="section-head">
+          <h2>Method</h2>
+        </div>
         <ul>
-          <li><b>Universe:</b> SPY</li>
-          <li><b>Signal:</b> Break above/below the first 15 minutes of the session</li>
-          <li><b>Risk metrics:</b> Sharpe, max drawdown, win rate, average trade return</li>
-          <li><b>Robustness:</b> Performance across volatility regimes + sensitivity checks</li>
-          <li><b>Costs:</b> Transaction cost assumptions included in evaluation</li>
+          <li><strong>Universe:</strong> SPY</li>
+          <li><strong>Signal:</strong> Break above/below the first 15 minutes of the session</li>
+          <li><strong>Risk metrics:</strong> Sharpe, max drawdown, win rate, average trade return</li>
+          <li><strong>Robustness:</strong> Performance across volatility regimes + sensitivity checks</li>
+          <li><strong>Costs:</strong> Transaction cost assumptions included in evaluation</li>
         </ul>
       </section>
 
       <section class="section prose">
-        <h2>Planned Outputs</h2>
+        <div class="section-head">
+          <h2>Planned Outputs</h2>
+        </div>
         <ul>
           <li>Equity curve and drawdown curve</li>
           <li>Return distribution (histogram)</li>
@@ -67,8 +79,10 @@
         </ul>
       </section>
 
-      <section class="section prose">
-        <h2>Next Steps</h2>
+      <section class="section">
+        <div class="section-head">
+          <h2>Next Steps</h2>
+        </div>
         <details class="detail-card" open>
           <summary>Finalize dataset integrity checks</summary>
           <p>Validate timestamps, missing bars, and assumptions around session boundaries before final run outputs.</p>
@@ -84,11 +98,11 @@
       </section>
 
       <section class="section">
-        <a class="kicker-link" href="research.html">← Back to Research</a>
+        <a class="btn" href="research.html">← Back to Research</a>
       </section>
     </main>
 
-    <footer>© 2026 Fabian Bonilla · fabianb.com</footer>
+    <footer class="footer">© 2026 Fabian Bonilla · fabianb.com</footer>
   </div>
 </body>
 </html>
