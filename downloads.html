@@ -4,117 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Downloads | Fabian Bonilla</title>
-  <meta name="description" content="Resume, write-ups, and model files." />
+  <meta name="description" content="Resume, research write-ups, and model templates." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Fabian Bonilla</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="quant.html">Quant Lab</a>
-        <a href="modeling.html">Modeling</a>
-        <a href="entrepreneurship.html">Entrepreneurship</a>
-        <a href="downloads.html" aria-current="page">Downloads</a>
+  <div class="mobile-nav">
+    <a class="mobile-nav-logo" href="index.html">Fabian<span>.</span></a>
+    <nav style="display:flex;gap:14px;font-size:12px;font-weight:600;">
+      <a href="index.html" style="color:#6b7280;">Home</a>
+      <a href="about.html" style="color:#6b7280;">About</a>
+      <a href="now.html" style="color:#6b7280;">Now</a>
+    </nav>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">Fabian<br>Bonilla<span>.</span></div>
+      <div class="sidebar-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Open to opportunities</span>
       </div>
-    </div>
-  </nav>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a href="index.html"><span class="nav-num">00</span>Home</a>
+        <a href="about.html"><span class="nav-num">01</span>About</a>
+        <a href="research.html"><span class="nav-num">02</span>Research</a>
+        <a href="quant.html"><span class="nav-num">03</span>Quant Lab</a>
+        <a href="modeling.html"><span class="nav-num">04</span>Modeling</a>
+        <a href="entrepreneurship.html"><span class="nav-num">05</span>Entrepreneurship</a>
+        <a href="now.html"><span class="nav-num">06</span>Now</a>
+        <a href="downloads.html" aria-current="page"><span class="nav-num">07</span>Downloads</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="sidebar-contact" href="mailto:fabianbonilla222@gmail.com">fabianbonilla222@gmail.com</a>
+        <a class="sidebar-contact" href="https://linkedin.com/in/fabian-bonilla-382b71194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <span class="sidebar-contact">Athens, GA · UGA Dec 2026</span>
+      </div>
+    </aside>
 
-  <main class="main-content">
-    <div class="container">
-
+    <main class="main">
       <div class="page-header">
-        <span class="mono-label">Downloads</span>
+        <div class="page-eyebrow">Downloads</div>
         <h1 class="page-title">Resume, Write-ups<br>&amp; Models.</h1>
-        <p class="page-subtitle">Available files — research and models added as they are completed.</p>
+        <p class="page-subtitle">Everything available to download. Research and models are added as they're completed — check <a href="now.html" style="color:var(--accent); font-weight:600;">Now</a> for current build status.</p>
       </div>
 
       <section class="section">
-        <h2 class="section-label">Resume</h2>
-        <div class="project-list">
-          <a class="project-row" href="files/Fabian_Bonilla_Resume.pdf" target="_blank" rel="noreferrer">
-            <span class="project-num">PDF</span>
-            <span class="project-title">Fabian Bonilla Resume</span>
-            <span class="project-tags">
-              <span class="tag">PDF</span>
-              <span class="tag">Resume</span>
-            </span>
-            <span class="project-status active">Available</span>
-            <span class="project-arrow">↓</span>
+        <div class="section-label"><span class="section-num">01</span>Resume</div>
+        <div class="project-grid">
+          <a class="project-card" href="files/Fabian_Bonilla_Resume.pdf" target="_blank" rel="noreferrer">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">PDF</span><span class="tag">Resume</span></div>
+              <span class="project-status active">Available Now</span>
+            </div>
+            <h3 class="project-title">Fabian Bonilla — Resume</h3>
+            <p class="project-desc">Current version — education, experience, skills, and projects. Updated regularly.</p>
+            <span class="project-cta">Open PDF ↓</span>
           </a>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-label">Research Write-ups</h2>
-        <div class="project-list">
-          <article class="project-row">
-            <span class="project-num">001</span>
-            <span class="project-title">Opening Range Breakout in SPY</span>
-            <span class="project-tags">
-              <span class="tag">Research</span>
-              <span class="tag">R</span>
-            </span>
-            <span class="project-status drafting">In Progress</span>
-            <span class="project-arrow">—</span>
-          </article>
-          <article class="project-row">
-            <span class="project-num">002</span>
-            <span class="project-title">Minimum Wage &amp; Employment (DID)</span>
-            <span class="project-tags">
-              <span class="tag">Causal</span>
-              <span class="tag">R</span>
-            </span>
-            <span class="project-status">Planned</span>
-            <span class="project-arrow">—</span>
-          </article>
+        <div class="section-label"><span class="section-num">02</span>Research Write-ups</div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Research</span><span class="tag">R</span></div>
+              <span class="project-status active">In Progress</span>
+            </div>
+            <h3 class="project-title">Opening Range Breakout in SPY</h3>
+            <p class="project-desc">Executive summary, equity curve, performance table, and methodology. Will be downloadable when the study is complete — expected Q3 2026.</p>
+            <a href="orb.html" class="project-cta">Track progress →</a>
+          </div>
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Causal</span><span class="tag">R</span></div>
+              <span class="project-status">Planned</span>
+            </div>
+            <h3 class="project-title">Minimum Wage &amp; Employment (DID)</h3>
+            <p class="project-desc">Identification strategy, assumptions, and robustness checklist in professional memo format.</p>
+            <span class="project-cta" style="color:var(--muted-2);">After ORB study</span>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-label">Models &amp; Templates</h2>
-        <div class="project-list">
-          <article class="project-row">
-            <span class="project-num">001</span>
-            <span class="project-title">DCF Valuation Template</span>
-            <span class="project-tags">
-              <span class="tag">Excel</span>
-              <span class="tag">Valuation</span>
-            </span>
-            <span class="project-status">Planned</span>
-            <span class="project-arrow">—</span>
-          </article>
-          <article class="project-row">
-            <span class="project-num">002</span>
-            <span class="project-title">Duration &amp; Rate Risk Model</span>
-            <span class="project-tags">
-              <span class="tag">Excel</span>
-              <span class="tag">Rates</span>
-            </span>
-            <span class="project-status">Planned</span>
-            <span class="project-arrow">—</span>
-          </article>
+        <div class="section-label"><span class="section-num">03</span>Models &amp; Templates</div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Excel</span><span class="tag">Valuation</span></div>
+              <span class="project-status">Planned</span>
+            </div>
+            <h3 class="project-title">DCF Valuation Template</h3>
+            <p class="project-desc">Driver-based assumptions and sensitivity analysis — available for download when complete.</p>
+            <a href="modeling.html" class="project-cta" style="color:var(--muted-2);">See modeling page →</a>
+          </div>
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Excel</span><span class="tag">Rates</span></div>
+              <span class="project-status">Planned</span>
+            </div>
+            <h3 class="project-title">Duration &amp; Rate Risk Model</h3>
+            <p class="project-desc">Duration matching and scenario analysis for fixed-income portfolios.</p>
+            <a href="modeling.html" class="project-cta" style="color:var(--muted-2);">See modeling page →</a>
+          </div>
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Excel</span><span class="tag">Operations</span></div>
+              <span class="project-status active">Drafting</span>
+            </div>
+            <h3 class="project-title">Café Cash Flow &amp; KPI Model</h3>
+            <p class="project-desc">Weekly P&amp;L tracker, contribution margin by product line, and staffing model built from real café operations.</p>
+            <a href="entrepreneurship.html" class="project-cta">See framework →</a>
+          </div>
         </div>
       </section>
 
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
-      <div class="footer-links">
-        <a href="mailto:fabianbonilla222@gmail.com">Email</a>
-        <a href="about.html">About</a>
-      </div>
-    </div>
-  </footer>
-
+      <footer class="site-footer">
+        <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
+        <div class="footer-links">
+          <a href="mailto:fabianbonilla222@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/fabian-bonilla-382b71194" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="about.html">About</a>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

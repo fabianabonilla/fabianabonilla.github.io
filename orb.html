@@ -7,68 +7,91 @@
   <meta name="description" content="A research-style evaluation of the Opening Range Breakout strategy in SPY." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Fabian Bonilla</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="research.html" aria-current="page">Research</a>
-        <a href="quant.html">Quant Lab</a>
-        <a href="modeling.html">Modeling</a>
-        <a href="entrepreneurship.html">Entrepreneurship</a>
-        <a href="downloads.html">Downloads</a>
+  <div class="mobile-nav">
+    <a class="mobile-nav-logo" href="index.html">Fabian<span>.</span></a>
+    <nav style="display:flex;gap:14px;font-size:12px;font-weight:600;">
+      <a href="index.html" style="color:#6b7280;">Home</a>
+      <a href="research.html" style="color:#6b7280;">Research</a>
+      <a href="downloads.html" style="color:#6b7280;">Resume</a>
+    </nav>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">Fabian<br>Bonilla<span>.</span></div>
+      <div class="sidebar-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Open to opportunities</span>
       </div>
-    </div>
-  </nav>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a href="index.html"><span class="nav-num">00</span>Home</a>
+        <a href="about.html"><span class="nav-num">01</span>About</a>
+        <a href="research.html" aria-current="page"><span class="nav-num">02</span>Research</a>
+        <a href="quant.html"><span class="nav-num">03</span>Quant Lab</a>
+        <a href="modeling.html"><span class="nav-num">04</span>Modeling</a>
+        <a href="entrepreneurship.html"><span class="nav-num">05</span>Entrepreneurship</a>
+        <a href="now.html"><span class="nav-num">06</span>Now</a>
+        <a href="downloads.html"><span class="nav-num">07</span>Downloads</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="sidebar-contact" href="mailto:fabianbonilla222@gmail.com">fabianbonilla222@gmail.com</a>
+        <a class="sidebar-contact" href="https://linkedin.com/in/fabian-bonilla-382b71194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <span class="sidebar-contact">Athens, GA · UGA Dec 2026</span>
+      </div>
+    </aside>
 
-  <main class="main-content">
-    <div class="container">
-
+    <main class="main">
       <div class="page-header">
-        <span class="mono-label">Research · In Progress · Stack: R · Feb 2026</span>
+        <div class="page-eyebrow">Research · In Progress · Stack: R</div>
         <h1 class="page-title">Opening Range<br>Breakout in SPY</h1>
-        <p class="page-subtitle">A research-style evaluation of a popular intraday strategy — does it produce real edge after costs?</p>
+        <p class="page-subtitle">Does a popular intraday strategy produce real edge after transaction costs and volatility adjustment?</p>
+        <div class="page-meta">Started Feb 2026 · Results expected Q3 2026</div>
+        <div class="pill-row">
+          <span class="pill">SPY</span>
+          <span class="pill">Intraday</span>
+          <span class="pill">Backtesting</span>
+          <span class="pill">Risk-adjusted</span>
+          <span class="pill">R</span>
+        </div>
       </div>
 
       <section class="section">
-        <h2 class="section-label">Research Question</h2>
+        <div class="section-label"><span class="section-num">01</span>Research Question</div>
         <div class="prose">
-          <p>
-            Many traders claim the opening range breakout (ORB) is a repeatable edge.
-            This project tests whether an ORB strategy in SPY produces excess risk-adjusted returns
-            after accounting for volatility and transaction costs.
-          </p>
+          <p>Many traders claim the opening range breakout (ORB) is a repeatable edge. This project tests whether an ORB strategy in SPY produces excess risk-adjusted returns after accounting for volatility and transaction costs — and whether that edge is consistent across market regimes or concentrated in specific conditions.</p>
+        </div>
+        <div class="callout">
+          <strong>Hypothesis:</strong> ORB may show positive gross returns but marginal or negative net returns after realistic transaction costs — and performance likely varies significantly by volatility regime.
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-label">Method</h2>
+        <div class="section-label"><span class="section-num">02</span>Method</div>
         <ul class="prose-list">
-          <li><strong>Universe:</strong> SPY</li>
+          <li><strong>Universe:</strong> SPY (S&amp;P 500 ETF)</li>
           <li><strong>Signal:</strong> Break above/below the first 15 minutes of the session</li>
-          <li><strong>Risk metrics:</strong> Sharpe, max drawdown, win rate, average trade return</li>
-          <li><strong>Robustness:</strong> Performance across volatility regimes + sensitivity checks</li>
-          <li><strong>Costs:</strong> Transaction cost assumptions included in all evaluation</li>
+          <li><strong>Risk metrics:</strong> Sharpe ratio, max drawdown, win rate, average trade return</li>
+          <li><strong>Robustness:</strong> Performance split across low/high volatility regimes, subperiod stability</li>
+          <li><strong>Costs:</strong> Realistic bid/ask spread and commission assumptions applied to all evaluation</li>
         </ul>
       </section>
 
       <section class="section">
-        <h2 class="section-label">What's Been Built</h2>
+        <div class="section-label"><span class="section-num">03</span>Progress</div>
         <ul class="prose-list">
-          <li><strong>Dataset foundation:</strong> Structured historical SPY dataset for intraday ORB evaluation.</li>
-          <li><strong>Backtest framework in R:</strong> Reusable logic for entries, exits, and trade-by-trade tracking.</li>
-          <li><strong>Performance metrics setup:</strong> Sharpe, drawdown, win rate, and average trade return.</li>
-          <li><strong>Evaluation approach:</strong> Cost-aware analysis and robustness checks by volatility regime.</li>
+          <li><strong>Dataset foundation</strong> — Structured historical SPY intraday dataset assembled for ORB evaluation.</li>
+          <li><strong>Backtest framework in R</strong> — Reusable entry/exit logic with trade-by-trade tracking built.</li>
+          <li><strong>Performance metrics</strong> — Sharpe, drawdown, win rate, and average trade return framed and ready.</li>
+          <li><strong>Next:</strong> Finalize dataset integrity checks, run full backtest, produce regime comparison.</li>
         </ul>
       </section>
 
       <section class="section">
-        <h2 class="section-label">Planned Outputs</h2>
+        <div class="section-label"><span class="section-num">04</span>Planned Outputs</div>
         <ul class="prose-list">
           <li>Equity curve and drawdown curve</li>
           <li>Return distribution histogram</li>
@@ -79,37 +102,32 @@
       </section>
 
       <section class="section">
-        <h2 class="section-label">Next Steps</h2>
+        <div class="section-label"><span class="section-num">05</span>Next Steps</div>
         <details class="detail-card" open>
           <summary>Finalize dataset integrity checks</summary>
-          <p>Validate timestamps, missing bars, and assumptions around session boundaries before final run outputs.</p>
+          <p>Validate timestamps, missing bars, and session boundary assumptions before final outputs.</p>
         </details>
         <details class="detail-card">
           <summary>Run full backtest + diagnostics</summary>
-          <p>Generate benchmark comparisons, turnover statistics, and stability analysis over subperiods.</p>
+          <p>Benchmark comparisons, turnover statistics, and stability analysis over subperiods.</p>
         </details>
         <details class="detail-card">
-          <summary>Publish report-quality visuals</summary>
-          <p>Create clean charts and a concise narrative for replication-ready communication.</p>
+          <summary>Publish report-quality write-up</summary>
+          <p>Clean charts, concise narrative, and replication-ready methodology — available for download when complete.</p>
         </details>
+        <div style="margin-top:24px;">
+          <a class="btn" href="research.html">← Back to Research</a>
+        </div>
       </section>
 
-      <section class="section">
-        <a class="btn" href="research.html">← Back to Research</a>
-      </section>
-
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
-      <div class="footer-links">
-        <a href="mailto:fabianbonilla222@gmail.com">Email</a>
-        <a href="downloads.html">Resume</a>
-      </div>
-    </div>
-  </footer>
-
+      <footer class="site-footer">
+        <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
+        <div class="footer-links">
+          <a href="mailto:fabianbonilla222@gmail.com">Email</a>
+          <a href="downloads.html">Resume</a>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

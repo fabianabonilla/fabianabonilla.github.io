@@ -7,99 +7,97 @@
   <meta name="description" content="Empirical questions, econometrics, and clear write-ups." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Fabian Bonilla</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="research.html" aria-current="page">Research</a>
-        <a href="quant.html">Quant Lab</a>
-        <a href="modeling.html">Modeling</a>
-        <a href="entrepreneurship.html">Entrepreneurship</a>
-        <a href="downloads.html">Downloads</a>
+  <div class="mobile-nav">
+    <a class="mobile-nav-logo" href="index.html">Fabian<span>.</span></a>
+    <nav style="display:flex;gap:14px;font-size:12px;font-weight:600;">
+      <a href="index.html" style="color:#6b7280;">Home</a>
+      <a href="about.html" style="color:#6b7280;">About</a>
+      <a href="downloads.html" style="color:#6b7280;">Resume</a>
+    </nav>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">Fabian<br>Bonilla<span>.</span></div>
+      <div class="sidebar-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Open to opportunities</span>
       </div>
-    </div>
-  </nav>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a href="index.html"><span class="nav-num">00</span>Home</a>
+        <a href="about.html"><span class="nav-num">01</span>About</a>
+        <a href="research.html" aria-current="page"><span class="nav-num">02</span>Research</a>
+        <a href="quant.html"><span class="nav-num">03</span>Quant Lab</a>
+        <a href="modeling.html"><span class="nav-num">04</span>Modeling</a>
+        <a href="entrepreneurship.html"><span class="nav-num">05</span>Entrepreneurship</a>
+        <a href="now.html"><span class="nav-num">06</span>Now</a>
+        <a href="downloads.html"><span class="nav-num">07</span>Downloads</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="sidebar-contact" href="mailto:fabianbonilla222@gmail.com">fabianbonilla222@gmail.com</a>
+        <a class="sidebar-contact" href="https://linkedin.com/in/fabian-bonilla-382b71194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <span class="sidebar-contact">Athens, GA · UGA Dec 2026</span>
+      </div>
+    </aside>
 
-  <main class="main-content">
-    <div class="container">
-
+    <main class="main">
       <div class="page-header">
-        <span class="mono-label">Research</span>
+        <div class="page-eyebrow">Research</div>
         <h1 class="page-title">Empirical Questions.<br>Clear Write-ups.</h1>
-        <p class="page-subtitle">Research-grade evaluation of market strategies, policy impacts, and economic frameworks.</p>
+        <p class="page-subtitle">Research-grade evaluation of market strategies and economic frameworks — built for real decisions, not textbook exercises.</p>
       </div>
 
       <section class="section">
-        <h2 class="section-label">Studies</h2>
-        <div class="project-list">
-          <a class="project-row" href="orb.html">
-            <span class="project-num">001</span>
-            <span class="project-title">Opening Range Breakout: Does it work in SPY?</span>
-            <span class="project-tags">
-              <span class="tag">Econometrics</span>
-              <span class="tag">Markets</span>
-              <span class="tag">R</span>
-            </span>
-            <span class="project-status drafting">Drafting</span>
-            <span class="project-arrow">→</span>
+        <div class="section-label"><span class="section-num">01</span>Active</div>
+        <div class="project-grid">
+          <a class="project-card" href="orb.html">
+            <div class="project-card-top">
+              <div class="project-tags">
+                <span class="tag">Econometrics</span>
+                <span class="tag">Markets</span>
+                <span class="tag">R</span>
+              </div>
+              <span class="project-status active">In Progress</span>
+            </div>
+            <h3 class="project-title">Opening Range Breakout: Does it work in SPY?</h3>
+            <p class="project-desc">Research-style evaluation using historical intraday data, risk metrics, transaction costs, and robustness checks across volatility regimes.</p>
+            <span class="project-cta">Read full project →</span>
           </a>
-          <article class="project-row">
-            <span class="project-num">002</span>
-            <span class="project-title">Minimum Wage &amp; Employment (DID)</span>
-            <span class="project-tags">
-              <span class="tag">Causal</span>
-              <span class="tag">Policy</span>
-              <span class="tag">R</span>
-            </span>
-            <span class="project-status">Planned</span>
-            <span class="project-arrow">—</span>
-          </article>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-label">Planned Build · Minimum Wage &amp; Employment</h2>
-        <details class="detail-card">
-          <summary>Identification strategy</summary>
-          <ul>
-            <li>Define treatment/control groups and policy timing cleanly.</li>
-            <li>Document identification assumptions and pre-trend tests.</li>
-          </ul>
-        </details>
-        <details class="detail-card">
-          <summary>Estimation &amp; robustness</summary>
-          <ul>
-            <li>Report baseline estimate + robustness alternatives.</li>
-            <li>Separate statistical significance from economic significance.</li>
-          </ul>
-        </details>
-        <details class="detail-card">
-          <summary>Communication</summary>
-          <ul>
-            <li>Summarize in decision-ready language for non-technical readers.</li>
-            <li>Professional memo format with executive summary.</li>
-          </ul>
-        </details>
+        <div class="section-label"><span class="section-num">02</span>Planned</div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags">
+                <span class="tag">Causal</span>
+                <span class="tag">Policy</span>
+                <span class="tag">R</span>
+              </div>
+              <span class="project-status">Planned</span>
+            </div>
+            <h3 class="project-title">Minimum Wage &amp; Employment (DID)</h3>
+            <p class="project-desc">Difference-in-differences framework — identification assumptions, pre-trend tests, and interpretation in professional memo format. Decision-ready language for non-technical readers.</p>
+            <span class="project-cta" style="color:var(--muted-2);">Coming when ORB is complete</span>
+          </div>
+        </div>
       </section>
 
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
-      <div class="footer-links">
-        <a href="mailto:fabianbonilla222@gmail.com">Email</a>
-        <a href="downloads.html">Resume</a>
-      </div>
-    </div>
-  </footer>
-
+      <footer class="site-footer">
+        <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
+        <div class="footer-links">
+          <a href="mailto:fabianbonilla222@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/fabian-bonilla-382b71194" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="downloads.html">Resume</a>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

@@ -7,32 +7,48 @@
   <meta name="description" content="Backtests, risk, and systematic strategy research." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="site-nav" aria-label="Primary">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Fabian Bonilla</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="quant.html" aria-current="page">Quant Lab</a>
-        <a href="modeling.html">Modeling</a>
-        <a href="entrepreneurship.html">Entrepreneurship</a>
-        <a href="downloads.html">Downloads</a>
+  <div class="mobile-nav">
+    <a class="mobile-nav-logo" href="index.html">Fabian<span>.</span></a>
+    <nav style="display:flex;gap:14px;font-size:12px;font-weight:600;">
+      <a href="index.html" style="color:#6b7280;">Home</a>
+      <a href="about.html" style="color:#6b7280;">About</a>
+      <a href="downloads.html" style="color:#6b7280;">Resume</a>
+    </nav>
+  </div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-logo">Fabian<br>Bonilla<span>.</span></div>
+      <div class="sidebar-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Open to opportunities</span>
       </div>
-    </div>
-  </nav>
+      <nav class="sidebar-nav" aria-label="Primary">
+        <a href="index.html"><span class="nav-num">00</span>Home</a>
+        <a href="about.html"><span class="nav-num">01</span>About</a>
+        <a href="research.html"><span class="nav-num">02</span>Research</a>
+        <a href="quant.html" aria-current="page"><span class="nav-num">03</span>Quant Lab</a>
+        <a href="modeling.html"><span class="nav-num">04</span>Modeling</a>
+        <a href="entrepreneurship.html"><span class="nav-num">05</span>Entrepreneurship</a>
+        <a href="now.html"><span class="nav-num">06</span>Now</a>
+        <a href="downloads.html"><span class="nav-num">07</span>Downloads</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a class="sidebar-contact" href="mailto:fabianbonilla222@gmail.com">fabianbonilla222@gmail.com</a>
+        <a class="sidebar-contact" href="https://linkedin.com/in/fabian-bonilla-382b71194" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <span class="sidebar-contact">Athens, GA · UGA Dec 2026</span>
+      </div>
+    </aside>
 
-  <main class="main-content">
-    <div class="container">
-
+    <main class="main">
       <div class="page-header">
-        <span class="mono-label">Quant Lab · Primary: R · Secondary: Python</span>
+        <div class="page-eyebrow">Quant Lab · Primary: R · Secondary: Python</div>
         <h1 class="page-title">Backtests, Risk &amp;<br>Systematic Research.</h1>
-        <p class="page-subtitle">Frameworks, simulations, and strategy research built for real decision-making.</p>
+        <p class="page-subtitle">Frameworks and strategy research built for real decision-making. Each project is cost-aware, regime-tested, and designed for replication.</p>
         <div class="pill-row">
           <span class="pill">Primary: R</span>
           <span class="pill">Secondary: Python</span>
@@ -40,80 +56,56 @@
       </div>
 
       <section class="section">
-        <h2 class="section-label">Projects</h2>
-        <div class="project-list">
-          <a class="project-row" href="orb.html">
-            <span class="project-num">001</span>
-            <span class="project-title">ORB Backtest Framework</span>
-            <span class="project-tags">
-              <span class="tag">Backtest</span>
-              <span class="tag">Risk</span>
-              <span class="tag">R</span>
-            </span>
-            <span class="project-status active">Building</span>
-            <span class="project-arrow">→</span>
+        <div class="section-label"><span class="section-num">01</span>Active</div>
+        <div class="project-grid">
+          <a class="project-card" href="orb.html">
+            <div class="project-card-top">
+              <div class="project-tags">
+                <span class="tag">Backtest</span>
+                <span class="tag">Risk</span>
+                <span class="tag">R</span>
+              </div>
+              <span class="project-status active">In Progress</span>
+            </div>
+            <h3 class="project-title">ORB Backtest Framework</h3>
+            <p class="project-desc">Reusable backtesting engine with transaction costs, position sizing, and performance diagnostics. Foundational framework for future strategy research.</p>
+            <span class="project-cta">Open full study →</span>
           </a>
-          <article class="project-row">
-            <span class="project-num">002</span>
-            <span class="project-title">Monte Carlo Portfolio Simulator</span>
-            <span class="project-tags">
-              <span class="tag">Simulation</span>
-              <span class="tag">Portfolio</span>
-              <span class="tag">Python/R</span>
-            </span>
-            <span class="project-status">Planned</span>
-            <span class="project-arrow">—</span>
-          </article>
-          <article class="project-row">
-            <span class="project-num">003</span>
-            <span class="project-title">EMA Strategy Across Volatility Regimes</span>
-            <span class="project-tags">
-              <span class="tag">Indicators</span>
-              <span class="tag">Regimes</span>
-              <span class="tag">Python/R</span>
-            </span>
-            <span class="project-status">Planned</span>
-            <span class="project-arrow">—</span>
-          </article>
         </div>
       </section>
 
       <section class="section">
-        <h2 class="section-label">Planned Builds</h2>
-        <details class="detail-card">
-          <summary>Monte Carlo Portfolio Simulator</summary>
-          <ul>
-            <li>Define baseline return/volatility assumptions and correlation structure first.</li>
-            <li>Run multiple horizon scenarios with fixed contribution and rebalance schedules.</li>
-            <li>Track percentile outcomes, max drawdown distributions, and expected recovery time.</li>
-            <li>Stress assumptions under adverse volatility/sequence-of-returns shocks.</li>
-            <li>Summarize allocation guardrails and risk limits for practical decisions.</li>
-          </ul>
-        </details>
-        <details class="detail-card">
-          <summary>EMA Strategy Across Volatility Regimes</summary>
-          <ul>
-            <li>Define volatility regime segmentation first.</li>
-            <li>Fix identical entry/exit rules across regimes.</li>
-            <li>Compare returns, drawdowns, and trade frequency by regime.</li>
-            <li>Include cost assumptions and turnover diagnostics.</li>
-            <li>Conclude where the strategy is usable vs unreliable.</li>
-          </ul>
-        </details>
+        <div class="section-label"><span class="section-num">02</span>Pipeline</div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Simulation</span><span class="tag">Portfolio</span><span class="tag">Python/R</span></div>
+              <span class="project-status">Planned</span>
+            </div>
+            <h3 class="project-title">Monte Carlo Portfolio Simulator</h3>
+            <p class="project-desc">Thousands of portfolio paths — drawdown probability, terminal wealth ranges, and risk-of-ruin under different allocation rules. Horizon and sequence-of-returns stress testing.</p>
+            <span class="project-cta" style="color:var(--muted-2);">After ORB</span>
+          </div>
+          <div class="project-card">
+            <div class="project-card-top">
+              <div class="project-tags"><span class="tag">Indicators</span><span class="tag">Regimes</span><span class="tag">Python/R</span></div>
+              <span class="project-status">Planned</span>
+            </div>
+            <h3 class="project-title">EMA Strategy Across Volatility Regimes</h3>
+            <p class="project-desc">Do simple momentum indicators behave differently in low vs high volatility? Fixed rules, compared across regimes, with cost and turnover diagnostics.</p>
+            <span class="project-cta" style="color:var(--muted-2);">After Monte Carlo</span>
+          </div>
+        </div>
       </section>
 
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
-      <div class="footer-links">
-        <a href="mailto:fabianbonilla222@gmail.com">Email</a>
-        <a href="downloads.html">Resume</a>
-      </div>
-    </div>
-  </footer>
-
+      <footer class="site-footer">
+        <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
+        <div class="footer-links">
+          <a href="mailto:fabianbonilla222@gmail.com">Email</a>
+          <a href="downloads.html">Resume</a>
+        </div>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
