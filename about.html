@@ -7,60 +7,81 @@
   <meta name="description" content="Fabian Bonilla: economics student, quantitative researcher, and entrepreneurial capital allocator." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <nav class="nav" aria-label="Primary">
+  <nav class="site-nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Fabian Bonilla</a>
+      <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html" aria-current="page">About</a>
         <a href="research.html">Research</a>
         <a href="quant.html">Quant Lab</a>
         <a href="modeling.html">Modeling</a>
         <a href="entrepreneurship.html">Entrepreneurship</a>
-        <a href="downloads.html">Downloadables</a>
-      </nav>
-    </header>
+        <a href="downloads.html">Downloads</a>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-      <div class="hero-badge">Economics · Terry College of Business · UGA</div>
-      <h1 class="page-title">Building Systems.<br>Allocating Capital.<br>Thinking in Probabilities.</h1>
-      <p class="subtitle">Economics student focused on quantitative research, systematic trading, and entrepreneurial capital allocation.</p>
+  <main class="main-content">
+    <div class="container">
 
-      <section class="section prose">
-        <div class="section-head">
-          <h2>Core Bio</h2>
+      <div class="page-header">
+        <span class="mono-label">About</span>
+        <h1 class="page-title">Building Systems.<br>Allocating Capital.</h1>
+        <p class="page-subtitle">Economics student focused on quantitative research, systematic trading, and entrepreneurial capital allocation.</p>
+      </div>
+
+      <section class="section">
+        <h2 class="section-label">Background</h2>
+        <div class="two-col">
+          <div class="prose">
+            <p>
+              I'm Fabian Bonilla, an Economics student at the University of Georgia, Terry College of Business,
+              with a business analytics and quantitative finance emphasis (expected graduation: December 2026).
+              Based in Georgia, building my career around disciplined capital allocation.
+            </p>
+            <p>
+              I come from a Mexican-American immigrant family and carry a first-generation mindset:
+              operate with urgency, learn quickly, keep standards high. That pushed me into entrepreneurship early —
+              acquiring my first business through an SBA loan, operating a café, and running a videography
+              business with recurring weekly revenue.
+            </p>
+            <p>
+              In markets, I focus on risk-managed systems over prediction-based opinions.
+              I've been building and backtesting systematic frameworks (including ORB breakout research)
+              while developing technical fluency in R, Python, and SQL.
+            </p>
+            <p>
+              Long term: elite systematic trading capability, ownership of high-quality cash-flowing businesses,
+              and a durable capital platform that compounds over decades.
+            </p>
+          </div>
+          <div class="now-panel">
+            <h3 class="now-title">Quick Facts</h3>
+            <ul class="now-list">
+              <li>Economics @ UGA · Terry College · Dec 2026</li>
+              <li>Business analytics &amp; quant finance emphasis</li>
+              <li>First-generation college student</li>
+              <li>Café owner via SBA loan acquisition</li>
+              <li>Systematic trader &amp; backtesting researcher</li>
+              <li>Georgia-based · open to relocation</li>
+            </ul>
+            <div class="btn-row" style="margin-top:20px;">
+              <a class="btn btn-accent" href="files/Fabian_Bonilla_Resume.pdf" target="_blank" rel="noreferrer">Open Resume →</a>
+              <a class="btn" href="mailto:fabianbonilla222@gmail.com">Email Me</a>
+            </div>
+          </div>
         </div>
-        <p>
-          I'm Fabian Bonilla, an Economics student at the University of Georgia, Terry College of Business,
-          with a business analytics and quantitative finance emphasis (expected graduation: December 2026).
-          I'm based in Georgia and building my career around disciplined capital allocation.
-        </p>
-        <p>
-          I come from a Mexican-American immigrant family and carry a first-generation mindset:
-          operate with urgency, learn quickly, and keep standards high. That mindset pushed me into
-          entrepreneurship early — acquiring my first business through an SBA loan,
-          operating a café, and running a videography business with recurring weekly revenue.
-        </p>
-        <p>
-          In markets, I focus on risk-managed systems instead of prediction-based opinions.
-          I've been building and backtesting systematic frameworks (including ORB breakout research)
-          while developing technical fluency in R, Python, and SQL for data-driven decisions.
-        </p>
-        <p>
-          Long term, I'm optimizing for three outcomes: elite systematic trading capability,
-          ownership of high-quality cash-flowing businesses, and a durable capital platform that compounds over decades.
-        </p>
       </section>
 
       <section class="section">
-        <div class="section-head">
-          <h2>Skills</h2>
-        </div>
+        <h2 class="section-label">Skills</h2>
         <div class="skill-grid">
-          <article class="card skill-card">
+          <article class="skill-card">
             <h3 class="mini-title">Quantitative &amp; Analytical</h3>
             <ul>
               <li>Econometrics</li>
@@ -72,29 +93,26 @@
               <li>Sharpe / Sortino Analysis</li>
             </ul>
           </article>
-
-          <article class="card skill-card">
+          <article class="skill-card">
             <h3 class="mini-title">Programming</h3>
             <ul>
-              <li>R (tidyverse, backtesting workflows)</li>
-              <li>Python (APIs, pipelines, analytics)</li>
-              <li>SQL (MySQL, relational databases)</li>
-              <li>Git &amp; GitHub</li>
+              <li>R (tidyverse, backtesting)</li>
+              <li>Python (APIs, pipelines)</li>
+              <li>SQL (MySQL, relational DBs)</li>
               <li>Excel (advanced modeling)</li>
+              <li>Git &amp; GitHub</li>
             </ul>
           </article>
-
-          <article class="card skill-card">
+          <article class="skill-card">
             <h3 class="mini-title">Markets</h3>
             <ul>
               <li>Options Trading</li>
               <li>Futures (NQ, SPY, QQQ)</li>
               <li>Systematic Breakout Strategies</li>
-              <li>Risk-adjusted Performance Evaluation</li>
+              <li>Risk-adjusted Performance</li>
             </ul>
           </article>
-
-          <article class="card skill-card">
+          <article class="skill-card">
             <h3 class="mini-title">Entrepreneurship</h3>
             <ul>
               <li>SBA Loan Structuring</li>
@@ -106,65 +124,56 @@
         </div>
       </section>
 
-      <section class="section prose">
-        <div class="section-head">
-          <h2>What I Work On</h2>
+      <section class="section">
+        <h2 class="section-label">Career Snapshot</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-index">01</span>
+            <div>
+              <h3>Quantitative Research Development</h3>
+              <p>Building research-first workflows in R for intraday strategy testing and robustness analysis.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-index">02</span>
+            <div>
+              <h3>Financial Modeling Track</h3>
+              <p>Designing practical models for valuation, scenario planning, and rate-risk interpretation.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-index">03</span>
+            <div>
+              <h3>Entrepreneurial Operations</h3>
+              <p>Applying finance and analytics to pricing, growth, and resource allocation decisions.</p>
+            </div>
+          </div>
         </div>
-        <ul>
-          <li>Empirical market strategy research (e.g., ORB in SPY).</li>
-          <li>Backtesting frameworks with risk and cost-aware evaluation.</li>
-          <li>Financial modeling for valuation and interest-rate risk decisions.</li>
-          <li>Entrepreneurship projects where analytics support operations.</li>
-        </ul>
       </section>
 
       <section class="section">
-        <div class="section-head">
-          <h2>Career Snapshot</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <h3>Quantitative Research Development</h3>
-            <p>Building research-first workflows in R for intraday strategy testing and robustness analysis.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Financial Modeling Track</h3>
-            <p>Designing practical models for valuation, scenario planning, and rate-risk interpretation.</p>
-          </article>
-          <article class="timeline-item">
-            <h3>Entrepreneurial Operations</h3>
-            <p>Applying finance and analytics to pricing, growth, and resource allocation decisions.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section prose">
-        <div class="section-head">
-          <h2>Philosophy</h2>
-        </div>
-        <ul>
-          <li>Markets reward discipline, not emotion.</li>
-          <li>Risk management over prediction.</li>
-          <li>Consistency over intensity.</li>
-          <li>Capital compounds when ego is removed.</li>
-          <li>Systems beat impulses.</li>
+        <h2 class="section-label">Philosophy</h2>
+        <ul class="philosophy-list">
+          <li><span class="num">01</span>Markets reward discipline, not emotion.</li>
+          <li><span class="num">02</span>Risk management over prediction.</li>
+          <li><span class="num">03</span>Consistency over intensity.</li>
+          <li><span class="num">04</span>Capital compounds when ego is removed.</li>
+          <li><span class="num">05</span>Systems beat impulses.</li>
         </ul>
       </section>
 
-      <section class="section prose">
-        <div class="section-head">
-          <h2>Contact &amp; Resume</h2>
-        </div>
-        <p>I'm not interested in short-term wins. I'm building systems that compound for decades.</p>
-        <div class="hero-links">
-          <a class="btn btn-primary" href="files/Fabian_Bonilla_Resume.pdf" target="_blank" rel="noreferrer">Open Resume PDF →</a>
-          <a class="btn" href="mailto:fabianbonilla222@gmail.com">fabianbonilla222@gmail.com</a>
-          <a class="btn" href="downloads.html">All Downloadables →</a>
-        </div>
-      </section>
-    </main>
+    </div>
+  </main>
 
-    <footer class="footer">© 2026 Fabian Bonilla · fabianb.com</footer>
-  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2026 Fabian Bonilla · fabianb.com</span>
+      <div class="footer-links">
+        <a href="mailto:fabianbonilla222@gmail.com">fabianbonilla222@gmail.com</a>
+        <a href="downloads.html">Resume</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
